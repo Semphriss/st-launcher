@@ -1,0 +1,30 @@
+# Build Files
+build/
+build.*/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/Debug/
+**/Release/
+**/*.tmp
+**/cmake_install.cmake
+**/*.a
+**/*.so
+**/*.so.*
+**/Makefile
+.clickable/
+
+# IDE files
+.vscode/
+language.settings.xml
+*.vs/
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.directory
+*~

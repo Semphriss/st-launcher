@@ -1,0 +1,6 @@
+fonts/
+  Roboto-Regular.ttf: (TODO)
+  SuperTux-Medium.ttf: The SuperTux project (https://supertux.org/), GPLv3+
+images/
+  background.png: Screenshot from SuperTux gameplay, GPLv3+
+  *.svg: FontAwesome 5.15.4 (https://fontawesome.com), CC-BY 4.0 (Color edited)
