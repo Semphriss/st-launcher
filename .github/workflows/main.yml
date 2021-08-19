@@ -1,0 +1,28 @@
+name: main
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  linux:
+    strategy:
+      fail-fast: false
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          # Fetch the whole tree so git describe works
+          fetch-depth: 0
+          submodules: true
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cmake build-essential libcurl4-openssl-dev   \
+                                  libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev
+
+      - name: Build
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          make VERBOSE=1

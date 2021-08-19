@@ -15,9 +15,15 @@ Overview
 This is a stub; most of its features are roughly implemented, and are probably
 prone to bugs and other issues. Please use with care **and at your own risk!**
 
-To compile, you must install Curl (with system libraries or
-[vcpkg](https://github.com/microsoft/vcpkg)), then run the following commands
-from the repository root:
+To compile, you must install the following dependencies with system libraries
+or [vcpkg](https://github.com/microsoft/vcpkg) (Ubuntu APT names are given):
+
+- [Curl](https://curl.se/): `libcurl4-openssl-dev`
+- [SDL2](https://www.libsdl.org/download-2.0.php): `libsdl2-dev`
+- [SDL2-image](https://www.libsdl.org/projects/SDL_image/): `libsdl2-image-dev`
+- [SDL2-ttf](https://www.libsdl.org/projects/SDL_ttf/): `libsdl2-ttf-dev`
+
+Then, run the following commands from the repository root:
 
 ```
 mkdir build
